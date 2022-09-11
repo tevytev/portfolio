@@ -1,0 +1,232 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* HEADER + NAV */
+
+header {
+    width: 100%;
+    /* background: linear-gradient(to right, #FDFDFD, #E9ECEF); */
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15vw;
+}
+
+.logo-name {
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0px 5px;
+    /* border-radius: 100%; */
+    /* border-right: ridge 3px #2081c3; */
+}
+
+.main-nav {
+    /* border: solid 2px red; */
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vw;
+
+}
+
+.main-nav ul li {
+    /* border: green solid 2px; */
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: 200ms ease;
+}
+
+.main-nav ul li a:hover {
+    color: #2081c3;
+
+}
+
+/* INTRODUCTION */
+
+main {
+    /* background: linear-gradient(to right, #FDFDFD, #E9ECEF); */
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 15vw 1vh 15vw;
+}
+
+.first {
+    /* border: solid 2px red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 100px;
+    color: white;
+}
+.first h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+}
+
+.first p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border-left: ridge 4px #2081c3;
+    padding: 15px 20px 15px 20px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second img {
+    border: solid 2px #2081c3;
+    box-shadow: 13px 19px 31px -3px rgba(0,0,0,0.1);
+}
+
+/* PROJECT SECTION */
+
+.project-section {
+    background-color: #000000;
+    display: flex;
+    padding: 18vh 15vw;
+}
+
+.project-grid {
+    /* border: solid 3px red; */
+    display: grid;
+    grid-template-areas: 
+    "description description project1"
+    "project2 project3 project4"
+    "project5 description2 description2"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .8em;
+    width: 65em;
+
+}
+
+.description-cell {
+    font-family: 'Poppins', sans-serif;
+    grid-area: description;
+    color: white;
+    padding: 0 5em 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-cell p {
+    font-size: 1.2rem;
+    border-left: ridge 4px #C47335;
+    padding: 15px 0px 15px 20px;
+}
+
+.description-cell h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    display: inline-block;
+}
+
+.project1-cell {
+    grid-area: project1;
+    background-color: #2081c3;
+    border-radius: 6px;
+
+}
+
+.project2-cell {
+    grid-area: project2;
+    background-color: #2081c3;
+    border-radius: 6px;
+}
+
+.project3-cell {
+    grid-area: project3;
+    background-color: #2081c3;
+    border-radius: 6px;
+}
+
+.project4-cell {
+    grid-area: project4;
+    background-color: #2081c3;
+    border-radius: 6px;
+}
+
+.project5-cell {
+    grid-area: project5;
+    background-color: #2081c3;
+    border-radius: 6px;
+}
+
+.description2-cell {
+    font-family: 'Poppins', sans-serif;
+    grid-area: description2;
+    color: white;
+    padding: 0 5em 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.description2-cell p {
+    font-size: 1.2rem;
+    border-left: ridge 4px #F19953;
+    padding: 15px 0px 15px 20px;
+}
+
+.description2-cell h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    display: inline-block;
+}
+
+.skill-section {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: black;
+   padding: 7vh 0;
+   /* border: solid red 2px; */
+}
+
+.skill-section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 1vh;
+    font-size: 1.6rem;
+}
+
+.skill-section p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.skill-section img {
+    width: 10%;
+}
